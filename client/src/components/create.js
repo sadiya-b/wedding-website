@@ -40,7 +40,7 @@ return (
      <h3>Create New Record</h3>
      <form onSubmit={onSubmit}>
        <div className="form-group">
-         <label htmlFor="name">Name</label>
+         <label htmlFor="name">Vendor Name</label>
          <input
            type="text"
            className="form-control"
@@ -50,7 +50,7 @@ return (
          />
        </div>
        <div className="form-group">
-         <label htmlFor="position">Position</label>
+         <label htmlFor="position">Link</label>
          <input
            type="text"
            className="form-control"
@@ -66,11 +66,11 @@ return (
              type="radio"
              name="positionOptions"
              id="positionIntern"
-             value="Intern"
-             checked={form.level === "Intern"}
+             value="Planner"
+             checked={form.level === "Planner"}
              onChange={(e) => updateForm({ level: e.target.value })}
            />
-           <label htmlFor="positionIntern" className="form-check-label">Intern</label>
+           <label htmlFor="positionIntern" className="form-check-label">Planner</label>
          </div>
          <div className="form-check form-check-inline">
            <input
@@ -78,11 +78,11 @@ return (
              type="radio"
              name="positionOptions"
              id="positionJunior"
-             value="Junior"
-             checked={form.level === "Junior"}
+             value="Caterer"
+             checked={form.level === "Caterer"}
              onChange={(e) => updateForm({ level: e.target.value })}
            />
-           <label htmlFor="positionJunior" className="form-check-label">Junior</label>
+           <label htmlFor="positionJunior" className="form-check-label">Caterer</label>
          </div>
          <div className="form-check form-check-inline">
            <input
@@ -90,17 +90,17 @@ return (
              type="radio"
              name="positionOptions"
              id="positionSenior"
-             value="Senior"
-             checked={form.level === "Senior"}
+             value="Photographer"
+             checked={form.level === "Photographer"}
              onChange={(e) => updateForm({ level: e.target.value })}
            />
-           <label htmlFor="positionSenior" className="form-check-label">Senior</label>
+           <label htmlFor="positionSenior" className="form-check-label">Photographer</label>
          </div>
        </div>
        <div className="form-group">
          <input
            type="submit"
-           value="Create person"
+           value="Create Vendor"
            className="btn btn-primary"
          />
        </div>
