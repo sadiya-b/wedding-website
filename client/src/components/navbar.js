@@ -10,9 +10,9 @@ import { NavLink } from "react-router-dom";
 export default function Navbar() {
  return (
    <div>
-     <nav className="navbar navbar-expand-lg navbar-light bg-light">
+     <nav className="navbar navbar-expand-lg navbar-light">
        <NavLink className="navbar-brand" to="/">
-       <h2>Wedding Website 1</h2>
+       <h2>Wedding Planning</h2>
        </NavLink>
        <button
          className="navbar-toggler"
@@ -29,8 +29,13 @@ export default function Navbar() {
        <div className="collapse navbar-collapse" id="navbarSupportedContent">
          <ul className="navbar-nav ml-auto">
            <li className="nav-item">
-             <NavLink className="nav-link" to="/create">
-               Create Record
+            <NavLink className="nav-link" to="/">
+              Vendor
+             </NavLink>
+           </li>
+           <li className="nav-item">
+             <NavLink className="nav-link" to="/registrylist">
+               Registry
              </NavLink>
            </li>
          </ul>

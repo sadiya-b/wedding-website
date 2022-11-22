@@ -8,6 +8,9 @@ import Navbar from "./components/navbar";
 import Create from "./components/create";
 import RecordList from "./components/recordlist";
 import Edit from "./components/edit";
+import RegistryList from "./components/registrylist";
+import CreateEntry from "./components/createEntry";
+import EditEntry from "./components/editEntry";
 
 const App = () => {
  return (
@@ -16,7 +19,10 @@ const App = () => {
      <Routes>
       <Route exact path="/" element={<RecordList />} />
       <Route path="/edit/:id" element={<Edit />} />
-       <Route path="/create" element={<Create />} />
+      <Route path="/create" element={<Create />} />
+      <Route path="/registrylist" element={<RegistryList />} />
+      <Route path="/createEntry" element={<CreateEntry />} />
+       <Route path="/editEntry/:id" element={<EditEntry />} />
      </Routes>
    </div>
  );

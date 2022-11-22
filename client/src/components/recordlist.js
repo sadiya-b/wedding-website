@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
- 
+import { PlusCircle } from 'react-bootstrap-icons';
+
 const Record = (props) => (
  <tr>
    <td>{props.record.name}</td>
@@ -44,7 +45,7 @@ export default function RecordList() {
  
  // This method will delete a record
  async function deleteRecord(id) {
-   await fetch("http://localhost:5000/${id}", {
+   await fetch(`http://localhost:5000/${id}`, {
      method: "DELETE"
    });
  
@@ -68,7 +69,8 @@ export default function RecordList() {
  // This following section will display the table with the records of individuals.
  return (
    <div>
-     <h3>Record List</h3>
+     <h3>Vendor List
+     <Link className="btn " to="/create"><PlusCircle size={25}/> </Link> </h3>
      <table className="table table-striped" style={{ marginTop: 20 }}>
        <thead>
          <tr>
