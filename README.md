@@ -1,12 +1,13 @@
-# wedding-website
+# Union - A wedding planning website
 This repository features 3 features
 1. Crud Operations for Vendors 
 2. Crud Operations for Wedding registry. 
 3. Crud operation for Guest List
 
-#Author: Sadiya Bhawania
 
-#Installation Steps
+# Author: Sadiya Bhawania
+
+# Installation Steps
 $ git clone https://github.com/sadiya-b/wedding-website
 $ cd wedding-website/wedding-app
 $ npm install
@@ -19,7 +20,8 @@ on a seperate cmd/bash
 naviagte to wedding-app
 $ yarn start
 
-#Run
+
+# Run
 Backend
 localhost:3001
 
