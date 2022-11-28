@@ -37,3 +37,4 @@ Note: if it gives nodemon error - npm install -g nodemon
 3. Used render to deploy the code, but without using CORS, the backend wasn't connecting to front-end. 
 4. Main branch is the branch i'm using for deployment. 
 5. Local branch contains my code freeze minus readme, becauase i just updated it. 
+6. Project description, user stories are all in google doc
