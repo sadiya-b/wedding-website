@@ -9,17 +9,25 @@ This repository features 3 features
 
 # Installation Steps
 $ git clone https://github.com/sadiya-b/wedding-website
+
 $ cd wedding-website/wedding-app
+
 $ npm install
+
 $ npm initdb
+
 $ cd front
+
 $ npm install
+
 $ yarn start
+
 
 on a seperate cmd/bash
-naviagte to wedding-app
-$ yarn start
 
+naviagte to wedding-app
+
+$ yarn start
 
 # Run
 Backend
