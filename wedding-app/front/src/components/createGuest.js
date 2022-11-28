@@ -38,7 +38,7 @@ export default function CreateGuest(){
   }
 return (
    <div>
-     <h3>Add Registry Item</h3>
+     <h3>Add Guest Name</h3>
      <form onSubmit={onSubmitEntry}>
        <div className="form-group">
          <label htmlFor="name">Guest Name</label>
