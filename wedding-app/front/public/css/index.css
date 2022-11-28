@@ -1,0 +1,87 @@
+body {
+  font-family: new-spirit, serif;
+  font-style: normal;
+  font-weight: 300;
+  color: navy;
+}
+
+.title-logo {
+  height: 150px;
+  width: 150px;
+}
+
+.nav-item {
+  font-size: 25px;
+  color: rgb(24, 59, 84);
+  font-family: p22-mackinac-pro, serif;
+}
+
+.innerContainer {
+  display: flex;
+  align-items: stretch;
+  justify-content: inherit;
+  font-family: p22-mackinac-pro, serif;
+  font-size: xx-large;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  padding-bottom: 50px;
+}
+
+.row1 {
+  display: flex;
+}
+
+/*.row1>div {
+  padding: 15px;
+}
+*/
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  font-family: new-spirit, serif;
+  font-size: 40px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, rgb(24, 59, 84), rgb(24, 59, 84));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.image {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+img {
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+}
+
+.container .row1:nth-child(2n+1) {
+  flex-direction: row-reverse;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+  background-color: #ffe6e6; // Choose your own color here
+}
+
+th {
+  align-items: center;
+  justify-content: center;
+}
+
+#record {
+  table-layout: fixed;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
