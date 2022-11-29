@@ -1,7 +1,7 @@
 const express = require("express");
 const recordRoutes = express.Router();
 
-const { myDb } = require("./MyMongoDB.js");
+const { myDb } = require("MyMongoDB.js");
 
 
 recordRoutes.get("/getData", async function (req, res,next) {
