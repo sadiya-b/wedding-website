@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build":"webpack",
     "postinstall":"cd front && npm install && yarn build",
     "start": "node ./bin/www",
     "dev": "node ./node_modules/nodemon/bin/nodemon.js ./bin/www",
