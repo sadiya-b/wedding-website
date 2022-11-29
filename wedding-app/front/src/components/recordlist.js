@@ -25,7 +25,7 @@ export default function RecordList() {
  useEffect(() => {
    async function getRecords() {
     console.log("in recordList.js")
-     const response = await fetch("https://unionbackend.onrender.com/record");
+     const response = await fetch("/record");
  
      if (!response.ok) {
        const message = "An error occurred: {response.statusText}";
