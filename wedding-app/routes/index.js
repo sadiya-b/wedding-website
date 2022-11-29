@@ -2,6 +2,7 @@ const express = require("express");
 const recordRoutes = express.Router();
 
 const { myDb } = require("./MyMongoDB.js");
+>>>>>>> parent of 8a1a620 (Update index.js)
 
 
 recordRoutes.get("/getData", async function (req, res,next) {
