@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build":"webpack",
-    "postinstall"::"cd front && npm install && yarn build",
+    "postinstall":"cd front && npm install && yarn build",
     "start": "node ./bin/www",
     "dev": "node ./node_modules/nodemon/bin/nodemon.js ./bin/www",
     "initdb" : "mongoimport --jsonArray --db wedding --collection vendors --file vendorMockData.json & mongoimport --jsonArray --db wedding --collection registry --file RegistryMockData.json & mongoimport --jsonArray --db wedding --collection guest --file guestMockData.json"
