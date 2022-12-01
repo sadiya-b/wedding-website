@@ -4,6 +4,7 @@ const { ObjectID } = require("mongodb");
 function MyMongoDB() {
   console.log("load");
   const myDb = {};
+  //This is new to me for listening on 0.0.0.0, I searched online and learned that with 0.0.0.0 being the alias for "listen on all available network interfaces".
   const url = process.env.MONGO_URL || "mongodb://0.0.0.0:27017";
   const DB_NAME = "wedding";
   const VENDOR_COL_NAME = "vendors";
