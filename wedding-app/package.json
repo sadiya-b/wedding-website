@@ -6,7 +6,7 @@
     "postinstall":"cd front && npm install && npm run build",
     "start": "node ./bin/www",
     "dev": "node ./node_modules/nodemon/bin/nodemon.js ./bin/www",
-    "initdb" : "mongoimport --jsonArray --db wedding --collection vendors --file vendorMockData.json & mongoimport --jsonArray --db wedding --collection registry --file RegistryMockData.json & mongoimport --jsonArray --db wedding --collection guest --file guestMockData.json"
+        "initdb" : "mongoimport --jsonArray --db wedding --collection vendors --file ./db/vendorMockData.json & mongoimport --jsonArray --db wedding --collection registry --file ./db/RegistryMockData.json & mongoimport --jsonArray --db wedding --collection guest --file ./db/guestMockData.json"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
