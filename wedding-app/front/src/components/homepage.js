@@ -4,6 +4,7 @@ import vendor from "../utils/vendors.png"
 import guests from "../utils/guests.jpg"
 import { useEffect } from "react";
 import * as Icon from 'react-bootstrap-icons';
+import { Link } from "react-router-dom";
 
 function HomePage() {
 
@@ -23,7 +24,7 @@ function HomePage() {
     </div>
     <div className="row1">
       <div className="text">Register for gifts you actually want 
-        <a id="browse" href="/registrylist"> <Icon.ArrowRight/> </a>
+        <Link id="browse" to="/registrylist"><Icon.ArrowRight/></Link>
       </div>
       <div className="image">
         <img src={regPic} alt="registry" />
@@ -31,7 +32,7 @@ function HomePage() {
     </div>
     <div className="row1">
       <div className="text"> Streamline your search for Vendors
-        <a id="browse" href="/recordlist"> <Icon.ArrowRight/> </a>
+      <Link id="browse" to="/recordlist"><Icon.ArrowRight/> </Link>
       </div>
       <div className="image">
         <img src={vendor} alt="vendors" />
@@ -39,7 +40,7 @@ function HomePage() {
     </div>
     <div className="row1">
       <div className="text"> Meet Your Guest List Manager
-        <a id="browse" href="/recordlist"> <Icon.ArrowRight/> </a>
+        <Link id="browse" to="/recordlist"><Icon.ArrowRight/></Link>
       </div>
       <div className="image">
         <img src={guests} alt="vendors" />
