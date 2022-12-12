@@ -21,7 +21,7 @@ function MyMongoDB() {
       const list = client.db(DB_NAME).collection(VENDOR_COL_NAME);
 
       const query = {};
-      console.log("loading query in get records")
+      console.log("loading query for get vendors list");
 
       return await list.find(query).sort({"_id":-1}).toArray();
     } catch (e) {
