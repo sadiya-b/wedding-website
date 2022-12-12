@@ -4,53 +4,59 @@ body {
   font-weight: 300;
   color: navy;
 }
+img {
+  height: 100%;
+  width: 100%;
+}
 
 .title-logo {
+  border-radius: 50%;
   height: 150px;
   width: 150px;
 }
 
 .nav-item {
-  font-size: 25px;
-  color: rgb(24, 59, 84);
+  font-size: 30px;
   font-family: p22-mackinac-pro, serif;
 }
 
-.innerContainer {
+.nav-item>.nav-link{
+  color:#5b715b ;
+}
+
+.innerContainer>h1 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: normal;
+  justify-content: space-around;
   align-items: stretch;
-  justify-content: inherit;
   font-family: p22-mackinac-pro, serif;
-  font-size: xx-large;
-  font-weight: 600;
+  font-size: 50px;
   background-image: linear-gradient(to left, #553c9a, #b393d3);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  /*padding-bottom: 50px;*/
+}
+.innerContainer>h4 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: normal;
+  justify-content: space-around;
+  align-items: stretch;
+  font-family: p22-mackinac-pro, serif;
+  font-size: 20px;
+  color:#6547b8;
   padding-bottom: 50px;
 }
+
 
 .row1 {
   display: flex;
 }
 
-/*.row1>div {
-  padding: 15px;
-}
-*/
-.text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-  font-family: new-spirit, serif;
-  font-size: 40px;
-  font-weight: 600;
-  background-image: linear-gradient(to left, rgb(24, 59, 84), rgb(24, 59, 84));
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
 
 .image {
   width: 30%;
@@ -60,12 +66,6 @@ body {
 
 }
 
-img {
-  border-radius: 50%;
-  height: 350px;
-  width: 350px;
-}
-
 .container .row1:nth-child(2n+1) {
   flex-direction: row-reverse;
 }
@@ -73,15 +73,33 @@ img {
 .table-striped>tbody>tr:nth-child(odd)>td,
 .table-striped>tbody>tr:nth-child(odd)>th {
   background-color: #ffe6e6; // Choose your own color here
+  color:#998080;
 }
 
 th {
   align-items: center;
   justify-content: center;
+  color: #b3a1a1;
 }
 
 #record {
   table-layout: fixed;
   word-break: break-all;
   overflow-wrap: break-word;
+}
+
+td{
+  color:#998080;
+}
+
+td>a,td>.btn-link {
+  color: #392d2d;
+}
+
+td>a:hover {
+  color: #e6ffe6;
+}
+
+h3{
+  color:#816565;
 }

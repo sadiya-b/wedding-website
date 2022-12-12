@@ -28,8 +28,8 @@ export default function RecordList() {
      const response = await fetch("/record");
  
      if (!response.ok) {
-       const message = "An error occurred: {response.statusText}";
-       //indow.alert(message);
+       const message = "An error occurred: $response.statusText";
+       window.alert(message);
        return;
      }
      const result = await response.json();

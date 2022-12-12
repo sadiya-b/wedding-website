@@ -9,7 +9,7 @@ const Entry = (props) => (
    <td>{props.entry.quantity}</td>
    <td>{props.entry.price}</td>
    <td>
-     <Link className="btn btn-link" to={`/editEntry/${props.entry._id}`}>Edit</Link> |
+     <Link to={`/editEntry/${props.entry._id}`}>Edit</Link> |
      <button className="btn btn-link"
        onClick={() => {
          props.deleteEntry(props.entry._id);
@@ -72,7 +72,7 @@ export default function RegistryList() {
  return (
    <div>
      <h3>Registry List
-     <Link className="btn " to="/createEntry"><PlusCircle size={25}/> </Link> </h3>
+     <Link className="btn " to="/createEntry"><PlusCircle size={25}/></Link> </h3>
      <table className="table table-striped" id="record" style={{ marginTop: 20 }}>
        <thead>
          <tr>
