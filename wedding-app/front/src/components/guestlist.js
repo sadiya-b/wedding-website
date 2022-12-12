@@ -28,9 +28,11 @@ export default function GuestList() {
  useEffect(() => {
    async function getGuests() {
      const response = await fetch("/guest");
+
+     console.log(response);
  
      if (!response.ok) {
-       const message = "An error occurred: {response.statusText}";
+       const message = "An error occurred: "+ response.statusText;
        window.alert(message);
        return;
      }

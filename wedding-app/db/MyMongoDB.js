@@ -21,9 +21,9 @@ function MyMongoDB() {
       const list = client.db(DB_NAME).collection(VENDOR_COL_NAME);
 
       const query = {};
-      const sort = { _id : -1};
+      console.log("loading query in get records")
 
-      return await list.find(query).sort(sort).toArray();
+      return await list.find(query).sort({"_id":-1}).toArray();
     } catch (e) {
       console.log("getRecords error", e);
       throw e;
@@ -132,7 +132,7 @@ function MyMongoDB() {
 
       const query = {};
       console.log(" getRegistry running");
-      return await list.find(query).toArray();
+      return await list.find(query).sort({"_id":-1}).toArray();
     } catch (e) {
       console.log("getRegistry error", e);
       throw e;
@@ -243,7 +243,7 @@ function MyMongoDB() {
 
       const query = {};
       console.log(" getGuest running");
-      return await list.find(query).toArray();
+      return await list.find(query).sort({"_id":-1}).toArray();
     } catch (e) {
       console.log("getGuest error", e);
       throw e;

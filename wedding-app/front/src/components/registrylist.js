@@ -27,11 +27,12 @@ export default function RegistryList() {
  // This method fetches the records from the database.
  useEffect(() => {
    async function getEntry() {
+    console.log("in registryList.js");
      const response = await fetch("/register");
- 
+     console.log(response);
      if (!response.ok) {
-       const message = "An error occurred: {response.statusText}";
-       //window.alert(message);
+       const message = "An error occurred: "+ response.statusText;
+       window.alert(message);
        return;
      }
  

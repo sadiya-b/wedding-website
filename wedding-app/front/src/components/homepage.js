@@ -2,20 +2,10 @@ import React from "react";
 import regPic from "../utils/gifts.avif"
 import vendor from "../utils/vendors.avif"
 import guests from "../utils/guests.avif"
-import { useEffect } from "react";
 import * as Icon from 'react-bootstrap-icons';
 import { Link } from "react-router-dom";
 
 function HomePage() {
-
-  useEffect(() => {
-    async function reloadData() {
-      const data = await (await fetch("/getData")).json();
-      console.log("got data", data);
-    }
-
-    reloadData();
-  }, []);
 
   return (
     <div className="container">

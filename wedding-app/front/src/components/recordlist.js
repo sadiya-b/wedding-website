@@ -26,10 +26,11 @@ export default function RecordList() {
    async function getRecords() {
     console.log("in recordList.js")
      const response = await fetch("/record");
- 
+     
+     console.log(response);
      if (!response.ok) {
-       const message = "An error occurred: $response.statusText";
-       window.alert(message);
+        const message = "An error occurred: "+ response.statusText;
+        window.alert(message);
        return;
      }
      const result = await response.json();

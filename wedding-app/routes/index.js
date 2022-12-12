@@ -3,15 +3,14 @@ const recordRoutes = express.Router();
 
 const { myDb } = require("../db/MyMongoDB.js");
 
-
-
+/*
 recordRoutes.get("/getData", async function (req, res,next) {
   console.log("get data");
   res.json([1,2]);
-});
+});*/
 
 recordRoutes.get("/record", async function (req, res,next) {
-  console.log("get data");
+  console.log("get record");
   
  let venList;
 
