@@ -26,7 +26,7 @@ Details about the features:
 
 [Old Version of union app](https://unionbackend.onrender.com/)
 
-[New Verson of Union app](https://unionbackend.onrender.com/)
+[New Verson of Union app](https://unionnew.onrender.com/)
 
 ## Screenshots
 
