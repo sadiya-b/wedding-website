@@ -6,7 +6,8 @@ import * as Icon from 'react-bootstrap-icons';
 import { Link } from "react-router-dom";
 
 function HomePage() {
-
+//I recommend to add you personal/your company contact info at the button of this page, 
+//since if user have any questions they may not have clear idea about who they should claim with
   return (
     <div className="container">
     <div className="innerContainer">
