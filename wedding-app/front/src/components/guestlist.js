@@ -23,7 +23,8 @@ const Guest = (props) => (
  
 export default function GuestList() {
  const [guest, setGuest] = useState([]);
- 
+ //Although you used two color switching to identify each line, the list is still a little bit messy, maybe 
+ //you will want to seperate list to iframe different pages to make them more readable.
  // This method fetches the records from the database.
  useEffect(() => {
    async function getGuests() {
