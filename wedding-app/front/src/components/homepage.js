@@ -6,7 +6,9 @@ import * as Icon from 'react-bootstrap-icons';
 import { Link } from "react-router-dom";
 
 function HomePage() {
-
+//compared with last version, it is great to see you narrow down the distance of each lines!
+//I will recommend you to add one more element "Home" on the Nav-bar, since not every user will 
+//click on logo for back to homepage
   return (
     <div className="container">
     <div className="innerContainer">
